@@ -1,0 +1,168 @@
+#header{
+    position: relative;
+    background-color: black;
+    height: auto;
+    width: auto;
+    
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Allow menu to grow and fill available space */
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 8%;
+}
+#about-container{
+    position: relative;
+    background-color: rgb(228, 3, 116);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+#banner{
+    position: relative;
+    background-color: green;
+    height: auto    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    .bannerImg{
+        width: 100vw;
+    }
+}
+#card-container{
+    position: relative;
+    background-color: rgb(0, 70, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+ 
+}
+   /* card slider */
+   .card-slider {
+    overflow: hidden; /* Hide content outside the viewport */
+    width: 100vw; /* Full viewport width */
+    height: 200px; /* Define a height for the cards */
+    position: relative;
+}
+
+/* The track that contains the cards */
+.card-slider-track {
+    display: flex;
+    animation: slide 20s linear infinite; /* 20-second animation, loops infinitely */
+}
+
+/* Individual card styling */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+
+/* Animation to slide the cards from right to left */
+@keyframes slide {
+    from {
+        transform: translateX(100vw); /* Start from the right edge of the viewport */
+    }
+    to {
+        transform: translateX(-100%); /* End at the left, moving completely off-screen */
+    }
+}
+#review-container{
+    position: relative;
+    background-color: rgb(218, 240, 24);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#contact-container{
+    position: relative;
+    background-color: rgb(189, 22, 22);
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+        h2{
+            text-align: center;
+        }
+    
+        form {
+            position: relative;
+            bottom: 2cap;
+            max-width: 400px;
+            margin: 0 auto 2px;
+            
+    
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+}
+#footer{
+    position: relative;
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+
